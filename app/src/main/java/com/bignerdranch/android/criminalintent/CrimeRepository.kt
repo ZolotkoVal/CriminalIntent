@@ -6,7 +6,7 @@ import androidx.room.Room
 import database.CrimeDatabase
 import java.util.UUID
 
-private const val DATABASE_NAME = "crime- database"
+private const val DATABASE_NAME = "crime-database"
 class CrimeRepository private constructor(context: Context) {
     private val database : CrimeDatabase = Room.databaseBuilder(
         context.applicationContext,

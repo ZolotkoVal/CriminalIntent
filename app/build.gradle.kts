@@ -28,6 +28,12 @@ android {
             )
         }
     }
+    kapt {
+        arguments {
+            arg("room.schemaLocation",
+                "some/path/goes/here/")
+        }
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -45,7 +51,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
     implementation ("androidx.recyclerview:recyclerview:1.3.2")
-    implementation ("androidx.room:room- runtime:2.1.0-alpha04")
+    implementation ("androidx.room:room-runtime:2.1.0-alpha04")
     implementation("androidx.room:room-ktx:2.6.0")
     kapt ("androidx.room:room-compiler:2.6.0")
     testImplementation("junit:junit:4.13.2")
